@@ -6,7 +6,7 @@ global start
 start:
     ;now let's do it raw
     mov rax, 0x2000001 ; SYS_exit = 1 and is type 2 (bsd call)
-    mov rdi, 1 ; Exit success = 0
+    mov rdi, 14 ; Exit success = 0
     syscall ; faster than int 0x80, and legal!
 
 [section .data align=16]
