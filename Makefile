@@ -4,7 +4,7 @@ ASFLAGS=-f macho64
 LD=ld
 LDFLAGS=-arch x86_64 -static -macosx_version_min 10.10
 
-all: syscall64 cat
+all: syscall64 cat hello
 
 syscall64: syscall64.o
 	$(LD) $(LDFLAGS) syscall64.o -o syscall64
